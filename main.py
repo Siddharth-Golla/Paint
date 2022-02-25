@@ -27,16 +27,23 @@ grid = init_grid(ROWS, COLS, WHITE)
 draw_color = BLACK
 
 #  x-position of all buttons is same
-button_x = WIDTH - TOOLBAR_WIDTH/2 - 25
+button_row1_x = WIDTH - TOOLBAR_WIDTH/2 - 35
+button_row2_x = WIDTH - TOOLBAR_WIDTH/2 + 5
 
 # Create a list of button objects to be placed.
 buttons = [
-    Button(button_x, 30, 30, 30, BLACK),
-    Button(button_x, 65, 30, 30, RED),
-    Button(button_x, 100, 30, 30, GREEN),
-    Button(button_x, 135, 30, 30, BLUE),
-    Button(button_x, 170, 30, 30, WHITE, "Erase", BLACK),
-    Button(button_x, 200, 30, 30, WHITE, "Clear", BLACK)
+    Button(button_row1_x, 30, 30, 30, BLACK), Button(
+        button_row2_x, 30, 30, 30, WHITE),
+    Button(button_row1_x, 65, 30, 30, RED), Button(
+        button_row2_x, 65, 30, 30, ORANGE),
+    Button(button_row1_x, 100, 30, 30, GREEN), Button(
+        button_row2_x, 100, 30, 30, LGREEN),
+    Button(button_row1_x, 135, 30, 30, BLUE), Button(
+        button_row2_x, 135, 30, 30, VIOLET),
+    Button(button_row1_x, 170, 30, 30, YELLOW), Button(
+        button_row2_x, 170, 30, 30, LYELLOW),
+    Button(button_row1_x, 210, 30, 30, WHITE, "Erase", BLACK),
+    Button(button_row1_x, 245, 30, 30, WHITE, "Clear", BLACK)
 ]
 
 while run:
